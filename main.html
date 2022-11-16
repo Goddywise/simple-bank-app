@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main | Bank </title>
+    <link type="text/css" rel="stylesheet" href="./css/index.css"/>
+    <link type="text/css" rel="stylesheet" href="./css/main.css"/>
+</head>
+<body>
+    <header>
+        <div id="hamBtn" onclick="handleAside()">&#9776;</div>
+        <div>
+            <span>B. O . Peace</span>
+            <span># 2,340,000.00</span>
+        </div>
+    </header>
+    <main>
+        <div>
+            <div class="content transfer-content">Transfer</div>
+            <div class="content payment-content">Payment</div>
+            <div class="content airtime-content">Airtime | Data</div>
+            <div class="content transaction-content">Transaction</div>
+            <div class="content history-content">History</div>
+        </div>
+    </main>
+    <aside>
+        <span onclick="handleAside()">&times;</span>
+        <span class="menu transfer-menu" onclick="showMenu(this,'.transfer-content')">Transfer</span>
+        <span class="menu payment-menu" onclick="showMenu(this,'.payment-content')">Payment</span>
+        <span class="menu airtime-menu" onclick="showMenu(this,'.airtime-content')">Airtime | Data</span>
+        <span class="menu transaction-menu" onclick="showMenu(this,'.transaction-content')">Transaction</span>
+    </aside>
+    <script src="./js/index.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

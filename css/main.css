@@ -1,0 +1,95 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    width: 100%;
+    background-color: var(--dark-purple-color);
+    color: var(--white-color);
+}
+header > div:nth-child(1){
+    font-size: 2rem;
+    padding: 1rem;
+    border: 1px solid var(--white-color);
+    cursor: pointer;
+    border-radius: 7px;
+}
+header > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+header > div:nth-child(2) > span:nth-child(1){
+    font-size: 1.5rem;
+}
+header > div:nth-child(2) > span:nth-child(2){
+    font-size: 2.2rem;
+}
+
+main{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-color);
+    padding-top:40px;
+}
+
+main > div{
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-purple-color);
+    border-radius: 15px;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.12);
+    padding:10px;
+}
+
+main > div > div{
+    width:100%;
+    font-size: 1.8rem;
+    color:red;
+}
+
+aside{
+    position: fixed;
+    top:0;
+    left:0;
+    width:300px;
+    height:100%;
+    background-color: var(--aside-background);
+    color:var(--white-color);
+    display: none;
+    flex-direction: column;
+    gap:10px;
+    padding:20px 10px 0;
+}
+
+aside > span{
+    width:100%;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+aside > span:not(:nth-child(1)){
+    padding:10px 5px;
+    border-radius:4px;
+}
+
+aside > span:nth-child(1){
+    width:auto;
+   align-self: flex-end;
+   font-size: 3rem;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.showAside{
+    display: flex !important;
+}
+
+.activeMenu{
+    background-color: var(--white-color) !important;
+    color:var(--dark-purple-color) !important;
+}
