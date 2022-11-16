@@ -32,7 +32,7 @@ const showMenu =(menu,content)=>{
         console.log(e.name)
     }
     if(menu){
-        //handleAside();
+        handleAside();
     }
 //The above Try and Catch is to stop error for the code to run till the end---
     //menu.classList.add('activeMenu');
